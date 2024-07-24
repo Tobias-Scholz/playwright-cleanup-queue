@@ -2,9 +2,9 @@
 
 ## Features
 
-Register cleanup tasks specific to individual tests.
-Ensures cleanup tasks are executed in the correct order.
-Independent of test success or failure.
+- allows registering cleanup tasks for individual tests
+- cleanup tasks are executed in reverse order
+- cleanup failure will fail the test case
 
 ## Installation
 
@@ -41,7 +41,7 @@ Write your tests and use the `cleanup` fixture to register cleanup tasks. Each t
 ```typescript
 import { test } from './fixtures'
 
-test('should create todo and comment', async ({ page, cleanup }, testInfo) => {
+test('should create todo and comment', async ({ page, cleanup }) => {
   const todo = await createTodo()
   cleanup(() => todo.delete())
 
