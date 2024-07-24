@@ -1,7 +1,7 @@
 {
   "name": "playwright-cleanup-queue",
-  "version": "1.0.0",
-  "description": "Playwright fixture to cleanup resources created inside a test",
+  "version": "1.0.1",
+  "description": "Playwright fixture for per-test resource cleanup",
   "scripts": {
     "prepublish": "tsc"
   },
