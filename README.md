@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/playwright-cleanup-queue.svg)](https://badge.fury.io/js/playwright-cleanup-queue)
+
 `playwright-cleanup-queue` simplifies resource cleanup in [Playwright](https://playwright.dev/) tests by allowing you to register cleanup tasks for individual tests. This is beneficial for complex test setups, enabling you to teardown only the resources that were created in case a test fails. Cleanup tasks are executed in reverse order of their registration, ensuring that interdependent resources can be cleaned up correctly.
 
 ## Features
