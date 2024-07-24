@@ -1,0 +1,22 @@
+{
+  "name": "playwright-cleanup-queue",
+  "version": "1.0.0",
+  "description": "Playwright fixture to cleanup resources created inside a test",
+  "scripts": {
+    "prepublish": "tsc"
+  },
+  "author": "Tobias Scholz",
+  "license": "MIT License",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/Tobias-Scholz/playwright-cleanup-queue",
+  "keywords": [
+    "playwright",
+    "cleanup",
+    "fixture"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
