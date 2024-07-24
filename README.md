@@ -54,4 +54,4 @@ test('should create todo and comment', async ({ page, cleanup }) => {
 
 ## Typescript support
 
-Typescript is supported for this plugin.
+Typescript is supported for this project.
