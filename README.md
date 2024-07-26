@@ -4,9 +4,9 @@
 
 ## Features
 
-- allows registering cleanup tasks for individual tests
-- cleanup tasks are executed in reverse order
-- cleanup failure will fail the test case
+- register cleanup tasks for individual tests
+- cleanup tasks are executed in reverse order of registration
+- failure to cleanup will fail the test case
 
 ## Installation
 
@@ -33,6 +33,8 @@ import { cleanup, CleanupQueue } from 'playwright-cleanup-queue'
 Extend Playwright's base test to include the `cleanup` fixture and add the `CleanupQueue` type as a type parameter.
 
 ```typescript
+import { test as base } from '@playwright/test'
+
 export const test = base.extend<CleanupQueue>({
   cleanup
 })
