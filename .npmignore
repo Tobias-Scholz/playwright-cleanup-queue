@@ -2,3 +2,4 @@ src/
 .git
 README.md
 tsconfig.json
+.npmrc
